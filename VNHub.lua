@@ -21,6 +21,7 @@ local CameraShaker = require(RS.Util.CameraShaker)
 local GuideModule = require(RS.GuideModule)
 local Quests = require(RS.Quests)
 local VIM = game:service("VirtualInputManager")
+repeat wait() until game:IsLoaded()
 local Window = OrionLib:MakeWindow({
     Name = "YMIE HUB",
     IntroText = "YMIE HUB | BLOX FRUITS |",
