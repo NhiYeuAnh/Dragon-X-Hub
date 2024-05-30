@@ -2,6 +2,25 @@ if game.Players.LocalPlayer.Team==nil then repeat pcall(function()task.wait()if 
 local thongbao = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/notify_ui.lua"))()
 thongbao.New("Welcome To Script Me", 3)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local YMIEHUB = loadstring(game:HttpGet((MainLoader)))()
+local P = game:GetService("Players")
+local LP = P.LocalPlayer
+local PG = LP.PlayerGui
+local RS = game:GetService("ReplicatedStorage")
+local Remotes = RS:WaitForChild("Remotes")
+local Remote = Remotes:WaitForChild("CommF_")
+local RunS = game:GetService("RunService")
+local Loop = RunS.RenderStepped
+local Data = LP.Data
+local WS = game:GetService("Workspace")
+local WO = WS["_WorldOrigin"]
+local VU = game:GetService("VirtualUser")
+local EnemySpawns = WO.EnemySpawns
+local Enemies = WS.Enemies
+local CameraShaker = require(RS.Util.CameraShaker)
+local GuideModule = require(RS.GuideModule)
+local Quests = require(RS.Quests)
+local VIM = game:service("VirtualInputManager")
 local Window = OrionLib:MakeWindow({
     Name = "YMIE HUB",
     IntroText = "YMIE HUB | BLOX FRUITS |",
