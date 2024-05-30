@@ -10,51 +10,21 @@ local Window = Fluent:CreateWindow({
     Acrylic = true,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
+ 
 })
-
-local Main = Window:MakeTab({
-    Name = "Main Script",
-    PremiumOnly = false
-})
-local Combat = Window:MakeTab({
-    Name = "Players",
-    PremiumOnly = false
-})
-
-local Farm = Window:MakeTab({
-    Name = "Sub Farming",
-    PremiumOnly = false
-})
-local Stats = Window:MakeTab({
-    Name = "Stats",
-    PremiumOnly = false
-})
-local Island = Window:MakeTab({
-    Name = "Teleports Island",
-    PremiumOnly = false
-})
-local DF = Window:MakeTab({
-    Name = "Fruits",
-    PremiumOnly = false
-})
-local Raid = Window:MakeTab({
-    Name = "Raid",
-    PremiumOnly = false
-})
-local Shop = Window:MakeTab({
-    Name = "Shoping",
-    PremiumOnly = false
-})
-local Misc = Window:MakeTab({
-    Name = "Misc",
-    PremiumOnly = false
-})
-local Set = Window:MakeTab({
-    Name = "Setting",
-    PremiumOnly = false
-})
+local Tabs = {
+ Main = Window:AddTab({ Title = "Main", Icon = "home" }),
+ Setting = Window:AddTab({ Title = "Setting", Icon = "home" }),
+ Misc = Window:AddTab({ Title = "Misc", Icon = "home" }),
+ Shoping = Window:AddTab({ Title = "Shoping", Icon = "home" }),
+ Raid = Window:AddTab({ Title = "Raid", Icon = "home" }),
+ Fruits = Window:AddTab({ Title = "Fruits", Icon = "home" }),
+ Stats = Window:AddTab({ Title = "Stats", Icon = "home" }),
+ SubFarming = Window:AddTab({ Title = "SubFarming", Icon = "home" }),
+ Teleports Island = Window:AddTab({ Title = "Teleports Island", Icon = "home" }),
+ Players = Window:AddTab({ Title = "Players", Icon = "home" }),
 local Code = Main:AddSection({ Name = "Code" })
-
+---------------------------------------------------------------------
 local x2Code = {
     "Sub2CaptainMaui",
     "CODE_SERVICIO",
